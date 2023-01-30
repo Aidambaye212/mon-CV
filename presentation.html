@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Inscription - mon cv</title>
+	 <!-- css file link  -->
+	 <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+	<div>
+		<header>
+			
+		</header>
+		<section class="contact">
+			<h1 class="heading">Voici la page d'inscription</h1>
+			<ul class="contact-menu">
+				<li class="home">
+					<a href="mon cv.html" title="Retourner à la page d'accueil">
+						<i class="glyphicon-home">
+							<img src="images\Copie de home13.png">
+						</i>
+						Acceuil
+					</a>
+				</li>
+			</ul>
+
+			<legend><h1 class="heading">Inscrivez-<span>vous</span></h1></legend>
+			<div class="row">
+				<form action="traitementinscription" method="post">
+					<fieldset>
+						<div class="inputBox">
+							<input type="text" name="Prénom" placeholder="Votre Prénom" required>
+						</div>
+						<div class="inputBox">
+							<input type="text" name="Nom" placeholder="Votre Nom" required>
+						</div>
+						
+						<div class="inputBox">
+							<input type="e-mail" name="emailutilisateur" placeholder="Votre adresse E-mail" required>
+						</div>
+						
+						<div class="inputBox">
+							<input type="e-mail" name="emailutilisateurconfirmation" placeholder="Confirmer votre adresse E-mail" required>
+						</div>
+						<div class="inputBox">
+							<input type="password" name="motdepasseutilisateur" placeholder="Votre mot de passe" required>
+						</div>
+						
+						<div class="inputBox">
+							<input type="password" name="motdepasseutilisateurconfirmation" placeholder="Confirmer votre mot de passe" required>
+						</div>
+						
+						<div class="inputBox">
+							<input type="date" name="datedenaissance" placeholder="Votre date de naissance" required>
+						</div>
+						
+						<div class="SX">
+							<label>
+								<input type="radio" name="sexe" value="M" required>
+									Masculin
+								<br>
+								<input type="radio" name="sexe" value="F" required>
+								 	Feminin
+								<br>
+								<input type="radio" name="sexe" value="N" required>
+								 	Non spécifié
+							</label>
+						</div>
+						<br>
+						<div>
+							<!----liste déroulante: permet de faire un choix--->
+							<select class="pay" name="pays" required> 
+								<option><h4>Sélectionner votre pays</h4></option>
+								<optgroup label="Afrique">
+									<option value="Sénégal">Sénégal</option>
+									<option value="Algérie">Algérie</option>
+									<option value="Gambie">Gambie</option>
+									<option value="Ethiopie">Ethiopie</option>
+									<option value="Soudan">Soudan</option>
+									<option value="Libye">Libye</option>
+									<option value="Tchad">Tchad</option>
+									<option value="Angola">Angola</option>
+									<option value="Niger">Niger</option>
+									<option value="Mali">Mali</option>
+								</optgroup>
+								<optgroup label="Amérique">
+									<option value="Etats-Unis">Etats-Unis</option>
+									<option value="Canada">Canada</option>
+									<option value="Chili">Chili</option>
+									<option value="Brésil">Brésil</option>
+									<option value="Colombie">Colombie</option>
+									<option value="Grenade">Grenade</option>
+									<option value="Pérou">Pérou</option>
+									<option value="Equateur">Equateur</option>
+									<option value="Panama">Panama</option>
+									<option value="Venezuela">Venezuela</option>
+								</optgroup>
+								<optgroup label="Asie">
+									<option value="Chine">Chine</option>
+									<option value="Japon">Japon</option>
+									<option value="Arabie Saoudite">Arabie Saoudite</option>
+									<option value="Indonésie">Indonésie</option>
+									<option value="Syrie">Syrie</option>
+									<option value="Palestine">Palestine</option>
+									<option value="Jordanie">Jordanie</option>
+									<option value="Bahrein">Bahrein</option>
+									<option value="Philippines">Philippines</option>
+									<option value="Turquie">Turquie</option>
+								</optgroup>
+								<optgroup label="Europe">
+									<option value="">Allemagne</option>
+									<option value="Russie">Russie</option>
+									<option value="Serbie">Serbie</option>
+									<option value="Suisse">Suisse</option>
+									<option value="Ukraine">Ukraine</option>
+									<option value="Albanie">Albanie</option>
+									<option value="Autriche">Autriche</option>
+									<option value="Belgique">Belgique</option>
+									<option value="Espagne">Espagne</option>
+									<option value="Danemark">Danemark</option>
+								</optgroup>
+							</select>
+						</div>
+						<br>
+						<div class="me">
+							<label>
+								<input type="checkbox" name="newsletter">
+								Recevoir les nouveautés du site chaque fin du mois
+							</label>						
+						</div>
+						<br>
+						<div>
+							<button class="btn" type="submit" name="inscription">S'inscrire Maintenant</button>
+						</div>
+					</fieldset>
+				</form>
+			</div>
+		</section>
+	</div>
+</body>
+</html>
